@@ -11,5 +11,6 @@ int main(int argc, char* argv[])
     std::cout << "The Factorial of 7 = 5040" << std::endl;
     std::cout << "The Factorial of 7 = 5040" << std::endl;
     std::cout << "The Factorial of 7 = 5040" << std::endl;
+    std::cout << "The Factorial of 7 = 5040" << std::endl;
     return 0;
 }
