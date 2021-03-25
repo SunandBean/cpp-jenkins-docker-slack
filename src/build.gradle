@@ -1,0 +1,46 @@
+//task sayHello{
+//  println 'Hello Taeng'
+//}
+
+//task greeting{
+//  doFirst{
+//    println 'hello'
+//  }
+//  doLast{
+//    println 'bye'
+//  }
+//}
+
+//task sayHi {
+//  def loopCount = count.toInteger()
+//    for(def i in 1..loopCount){
+//      println('LoopCOunt: ' + i)
+//    }
+//}
+
+task AAA(dependsOn:['BBB','CCC']) {
+  doFirst{
+    println('doFirst: AAA')
+  }
+  doLast{
+    println('doLast: AAA')
+  }
+}
+
+task BBB {
+  doFirst{
+    println('doFirst: BBB')
+  }
+  doLast{
+    println('doLast: BBB')
+  }
+}
+
+task CCC {
+  doFirst{
+    println('doFirst: CCC')
+  }
+  doLast{
+    println('doLast: CCC')
+  }
+}
